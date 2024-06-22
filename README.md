@@ -103,6 +103,10 @@ nohup python3 -m streamlit run app.py
 
 Note: Streamlit runs on this port: 8501
 
+#GCP PORT opening
+```bash
+gcloud compute firewall-rules create <policyname> --allow tcp:<port number> --source-ranges=0.0.0.0/0 --description="<your-description-here>"
+```
 
 
 
